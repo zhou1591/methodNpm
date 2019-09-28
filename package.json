@@ -10,7 +10,7 @@
     "server": "http-server ./dist/index.html",
     "go": "webpack-dev-server --config build/webpack.config.js",
     "dev": "webpack-dev-server --config build/webpack.dev.js",
-    "over":"git add . && git commit -m 'npm' && git push"
+    "over":"git add . && git commit -m 'npm' && git push && npm publish"
   },
   "author": "周靖松",
   "license": "ISC",
