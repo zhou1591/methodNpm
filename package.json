@@ -1,6 +1,6 @@
 {
   "name": "zjsmethods",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "公共方法",
   "main": "dist/main.js",
   "scripts": {
@@ -9,7 +9,8 @@
     "builddev": "webpack --config build/webpack.dev.js",
     "server": "http-server ./dist/index.html",
     "go": "webpack-dev-server --config build/webpack.config.js",
-    "dev": "webpack-dev-server --config build/webpack.dev.js"
+    "dev": "webpack-dev-server --config build/webpack.dev.js",
+    "over":"git add . && git commit -m 'npm' && git push"
   },
   "author": "周靖松",
   "license": "ISC",
