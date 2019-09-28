@@ -1,6 +1,6 @@
 {
   "name": "zjsmethods",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "公共方法",
   "main": "dist/main.js",
   "scripts": {
@@ -10,17 +10,10 @@
     "server": "http-server ./dist/index.html",
     "go": "webpack-dev-server --config build/webpack.config.js",
     "dev": "webpack-dev-server --config build/webpack.dev.js",
-
-
-
-
     "main":"git add . && git commit -m 'npm' && git push && npm run build && npm publish",
     "isDist":"if exist dist ( npm run del )",
     "del":" rmdir dist /s /q",
     "over":"npm run isDist && npm run main"
-
-
-
   },
   "author": "周靖松",
   "license": "ISC",
