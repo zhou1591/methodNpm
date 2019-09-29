@@ -1,7 +1,8 @@
 {
   "name": "zjsmethods",
-  "version": "1.0.13",
-  "description": "公共方法",
+  "version": "1.0.14",
+  "keywords":["zjs","周靖松","zjsmethods"],
+  "description": "第一个npm包，因为平时业务比较多，打算写一些基础方法，顺便玩玩写个脚手架",
   "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,10 +11,13 @@
     "server": "http-server ./dist/index.html",
     "go": "webpack-dev-server --config build/webpack.config.js",
     "dev": "webpack-dev-server --config build/webpack.dev.js",
-    "main":"git add . && git commit -m 'npm' && git push && npm run build && npm publish",
-    "isDist":"if exist dist ( npm run del )",
-    "del":" rmdir dist /s /q",
-    "over":"npm run isDist && npm run main"
+    "main": "git add . && git commit -m 'npm' && git push && npm run build && npm publish",
+    "isDist": "if exist dist ( npm run del )",
+    "del": " rmdir dist /s /q",
+    "over": "npm run isDist && npm run main"
+  },
+  "bin": {
+    "zjs-cli": "zjs-cli.js"
   },
   "author": "周靖松",
   "license": "ISC",
