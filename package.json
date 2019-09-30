@@ -1,7 +1,11 @@
 {
   "name": "zjsmethods",
   "version": "1.0.14",
-  "keywords":["zjs","周靖松","zjsmethods"],
+  "keywords": [
+    "zjs",
+    "周靖松",
+    "zjsmethods"
+  ],
   "description": "第一个npm包，因为平时业务比较多，打算写一些基础方法，顺便玩玩写个脚手架",
   "main": "dist/main.js",
   "scripts": {
@@ -16,12 +20,8 @@
     "del": " rmdir dist /s /q",
     "over": "npm run isDist && npm run main"
   },
-  "bin": {
-    "zjs-cli": "zjs-cli.js"
-  },
   "author": "周靖松",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@babel/plugin-transform-runtime": "^7.6.0",
