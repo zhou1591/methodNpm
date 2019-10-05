@@ -19,5 +19,6 @@ const zjsMethods= {
     install,//use 方法
     copyField,//赋值函数
     readFile,//读文件
+    jsonCopy
 }
 export default zjsMethods

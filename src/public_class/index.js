@@ -4,6 +4,6 @@
  */
 import readFile from './read_file'
 
-export default {
+export  {
     readFile,//读文件
 }

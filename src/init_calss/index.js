@@ -5,7 +5,7 @@
 import copyField from './copy_field'
 import jsonCopy from './json_copy'
 
-export default {
+export  {
     copyField,
     jsonCopy
 }
