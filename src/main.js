@@ -2,22 +2,22 @@
  * @Date: 2019-09-20 14:35:14
  * @information: 最后更新时间
  */
-import initCalss from './init_calss'
-import publicClass from './public_class'
-console.log(initCalss,publicClass)
+import {copyField,jsonCopy} from './init_calss'
+import {readFile} from './public_class'
+
+// 方法对象
+let mixinMethod={copyField,jsonCopy}
+
 // 混入对象
 let mixinObj = {
-    methods:initCalss
+    methods:mixinMethod
 }
-console.log(mixinObj)
 const install = (vue) => {
     vue.mixin(mixinObj)
 }
 const zjsMethods= {
     install,//use 方法
-    ...initCalss,//初始化方法
-    ...publicClass,//公共方法
+    copyField,//赋值函数
+    readFile,//读文件
 }
-console.log(zjsMethods)
-
 export default zjsMethods
