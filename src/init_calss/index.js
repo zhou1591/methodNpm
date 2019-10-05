@@ -3,7 +3,9 @@
  * @information: 最后更新时间
  */
 import copyField from './copy_field'
+import jsonCopy from './json_copy'
 
 export {
-    copyField
+    copyField,
+    jsonCopy
 }
