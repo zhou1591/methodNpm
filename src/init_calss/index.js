@@ -8,4 +8,4 @@ import jsonCopy from './json_copy'
 export {
     copyField,
     jsonCopy
-}
+} 
