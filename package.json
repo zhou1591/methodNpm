@@ -1,5 +1,5 @@
 {
-  "name": "zjs-methods",
+  "name": "zjsmethods",
   "version": "1.0.16",
   "keywords": [
     "zjs",
@@ -11,7 +11,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config build/webpack.config.js",
-    "builddev": "webpack --config build/webpack.dev.js",
+    "builddev": "webpack --config build/webpack.dev.js", 
     "server": "http-server ./dist/index.html",
     "go": "webpack-dev-server --config build/webpack.config.js",
     "dev": "webpack-dev-server --config build/webpack.dev.js",
