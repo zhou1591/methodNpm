@@ -11,23 +11,20 @@ export default async function readFile(model) {
         let reader = new FileReader();
         // 读文件
         await reader.readAsText(file);
-        return reader.onload = await function() {
-            // 返回结果
-            return this.result
-        };
+        return reader
     }
     //支持IE 7 8 9 10
     else if (typeof window.ActiveXObject != 'undefined') {
         let xmlDoc;
         xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
         xmlDoc.async = false;
-        xmlDoc.load(model);
+        return xmlDoc.load(model);
     }
     //支持FF
     else if (document.implementation && document.implementation.createDocument) {
         let xmlDoc;
         xmlDoc = document.implementation.createDocument("", "", null);
         xmlDoc.async = false;
-        xmlDoc.load(model);
+        return xmlDoc.load(model);
     }
 }
