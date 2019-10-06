@@ -3,17 +3,20 @@
  * @information: 最后更新时间
  */
 export default async function readFile(model) {
+    console.log(1)
     // 谷歌
     if (window.FileReader) {
+        console.log(2)
         // 获取文件流
         let file = model.currentTarget.files[0];
         // 创建FileReader实例
         let reader = new FileReader();
         // 读文件
         await reader.readAsText(file);
-        reader.onload = await
-        function() {
+        reader.onload =  function(e) {
             // 返回结果
+            console.log(e)
+            console.log(this.result)
             return this.result
         };
     }
