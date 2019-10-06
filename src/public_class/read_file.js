@@ -11,7 +11,7 @@ export default async function readFile(model) {
         let reader = new FileReader();
         // 读文件
         await reader.readAsText(file);
-        return reader.onload =  function() {
+        return reader.onload = await function() {
             // 返回结果
             return this.result
         };
