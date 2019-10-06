@@ -2,11 +2,11 @@
  * @Date: 2019-09-20 14:35:14
  * @information: 最后更新时间
  */
-import {copyField,jsonCopy} from './init_calss'
-import {readFile} from './public_class'
+import {_copyField,_jsonCopy} from './init_calss'
+import {_readFile} from './public_class'
 
 // 方法对象
-let mixinMethod={copyField,jsonCopy}
+let mixinMethod={_copyField,_jsonCopy}
 
 // 混入对象
 let mixinObj = {
@@ -17,8 +17,8 @@ const install = (vue) => {
 }
 const zjsMethods= {
     install,//use 方法
-    copyField,//赋值函数
-    readFile,//读文件
-    jsonCopy
+    _copyField,//赋值函数
+    _readFile,//读文件
+    _jsonCopy
 }
 export default zjsMethods
