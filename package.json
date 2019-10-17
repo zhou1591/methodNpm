@@ -21,7 +21,7 @@
     "isDist": "if exist dist ( npm run del )",
     "del": " rmdir dist /s /q",
     "over": "npm run isDist && npm run main",
-    "orgin":"npm config set registry https://registry.npmjs.org"
+    "orgin":"npm config set registry http://www.npmjs.org/"
   },
   "author": "周靖松",
   "license": "ISC",
