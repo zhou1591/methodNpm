@@ -7,3 +7,7 @@ import _readFile from './read_file'
 export  {
     _readFile,//读文件
 }
+
+export default {
+    _readFile,//读文件
+}
