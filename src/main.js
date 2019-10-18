@@ -5,12 +5,10 @@
 import initCalss from './init_calss'
 import publicClass from './public_class'
 
-// 方法对象
-let mixinMethod=initCalss
 
 // 混入对象
 let mixinObj = {
-    methods:mixinMethod
+    methods:initCalss
 }
 const install = (vue) => {
     vue.mixin(mixinObj)
