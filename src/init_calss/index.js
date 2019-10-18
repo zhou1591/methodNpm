@@ -6,7 +6,7 @@ import _copyField from './copy_field'
 import _jsonCopy from './json_copy'
 import _readUrlQuery from './read_url_query'
 
-export default {
+export  {
     _copyField,//交换字段
     _jsonCopy,//深拷贝
     _readUrlQuery,//获取url 的query
