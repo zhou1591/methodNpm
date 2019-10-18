@@ -8,10 +8,12 @@
  * @Date: 2019-10-05 17:26:26
  */
 export default function readUrlQuery(queryName) {
-    let query = window.location.search.substring(1);
-    let vars = query.split("&");
-    for (let i = 0; i < vars.length; i++) {
-        let pair = vars[i].split("=");
+    let query = window.location.search.substring(1).split("&");
+    if(!query[0]){
+        query = window.location.hash.substring(1).split("?")[1].split('&');
+    }
+    for (let i = 0; i < query.length; i++) {
+        let pair = query[i].split("=");
         if (pair[0] == queryName) {
             return pair[1];
         }
