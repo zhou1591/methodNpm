@@ -8,16 +8,14 @@
  * @Date: 2019-10-25 14:53:06
  */
 export default function strEncryp(str,start,end){
+    if([str,start,end].find(el=>!el))return 
     let subStr =''
     let endLen = str.length
-    let len =  end - start
-    if(end<0){
-        len = endLen + end - 1
-    }
+    let End = end<0?endLen+end:end
+    let len =  End - start
     len=len>(endLen-start)?endLen-start:len
-    
     while(len--){
         subStr += '*'
     }
-    return `${str.substring(0,start)}${subStr}${str.substring(end,endLen)}`
+    return `${str.substring(0,start)}${subStr}${str.substring(End,endLen)}`
 }
