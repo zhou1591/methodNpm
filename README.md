@@ -50,3 +50,13 @@ let queryName = this._readUrlQuery('queryName')
 let text = this._readFile(model)
 
 input里边把文件传进去 ， 可以得到文件里边的内容
+
+
+### _strEncryp,//字符串加星
+
+let str = '1234567890'
+_strEncryp(str,3,6)
+
+// 123***7890
+
+第一个是字符串，第二个起始下标，第三个结束下标

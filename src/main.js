@@ -2,7 +2,7 @@
  * @Date: 2019-09-20 14:35:14
  * @information: 最后更新时间
  */
-import { _copyField, _jsonCopy, _readUrlQuery } from './init_calss'
+import { _copyField, _jsonCopy, _readUrlQuery,_strEncryp } from './init_calss'
 import { _readFile } from './public_class'
 
 // 初始化方法
@@ -10,6 +10,7 @@ let initCalss = {
     _copyField, //交换字段
     _jsonCopy, //深拷贝
     _readUrlQuery, //获取url 的query
+    _strEncryp,//字符串加星
 }
 
 // 混入对象
@@ -25,5 +26,6 @@ const zjsMethods = {
     _copyField, //交换字段
     _jsonCopy, //深拷贝
     _readUrlQuery, //获取url 的query
+    _strEncryp,//字符串加星
 }
 export default zjsMethods
