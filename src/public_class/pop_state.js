@@ -5,8 +5,8 @@
 export default {
     mounted() {
         window.onpopstate=this.popstateChange
-        window.history.pushState('forward', null, '#'); 
-        window.history.forward(1);
+        // window.history.pushState('forward', null, '#'); 
+        // window.history.forward(1);
     },
     destroyed() {
         window.onpopstate=null
