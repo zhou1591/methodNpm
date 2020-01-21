@@ -68,3 +68,4 @@
     mixins:[ _popState ] ;
 
     然后浏览器回滚得时候会触发 popstateChange 方法 ， 没有的话会默认行为
+
