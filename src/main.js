@@ -11,7 +11,7 @@ let initCalss = {
     _jsonCopy, //深拷贝
     _readUrlQuery, //获取url 的query
     _strEncryp,//字符串加星
-}
+} 
 
 // 混入对象
 let mixinObj = {
