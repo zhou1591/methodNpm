@@ -7,7 +7,7 @@ import { _readFile,_popState,_webpackConsole } from './public_class'
 
 // 初始化方法
 let initCalss = {
-    _copyField, //交换字段
+    _copyField, //交换字段 
     _jsonCopy, //深拷贝
     _readUrlQuery, //获取url 的query
     _strEncryp,//字符串加星
