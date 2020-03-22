@@ -69,3 +69,21 @@
 
     然后浏览器回滚得时候会触发 popstateChange 方法 ， 没有的话会默认行为
 
+### _vaileFile ，//使用文件二进制校验文件唯一性
+
+    当有业务需要上传oss 对象存储的时候，为了避免同一个文件（视频，音频，图片，压缩包等），有可能其他人复制或者改名字等等，造成文件重复上传，大量占用空间，写了一个校验文件二进制的方法
+
+
+    //首先引入这个类
+
+    import { _vaileFile } from 'zjsmethods'
+
+    //  然后在你需要判断oss 是否有该文件的时候
+
+    new _vaileFile('file对象').vaildArrayBuffer().then(res=>{
+        console.log(res)
+        // 继续上传 或者 向后端请求已经存在的文件url
+    })
+
+    // new 这个类之后 有一个vaildArrayBuffer 方法 他返回一个promise ,里边返回值是一个md5的字符串，这个是这个文件的唯一标识
+

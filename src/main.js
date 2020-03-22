@@ -3,7 +3,7 @@
  * @information: 最后更新时间
  */
 import { _copyField, _jsonCopy, _readUrlQuery,_strEncryp } from './init_calss'
-import { _readFile,_popState,_webpackConsole } from './public_class'
+import { _readFile,_popState,_webpackConsole,_vaileFile } from './public_class'
 
 // 初始化方法
 let initCalss = {
@@ -29,5 +29,6 @@ const zjsMethods = {
     _strEncryp,//字符串加星
     _popState,//hash监听浏览器回退
     _webpackConsole,//控制台动画
+    _vaileFile,//使用文件二进制校验文件唯一性
 }
 export default zjsMethods

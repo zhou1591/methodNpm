@@ -11,17 +11,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config build/webpack.config.js",
-    "builddev": "webpack --config build/webpack.dev.js", 
+    "builddev": "webpack --config build/webpack.dev.js",
     "server": "http-server ./dist/index.html",
     "go": "webpack-dev-server --config build/webpack.config.js",
     "dev": "webpack-dev-server --config build/webpack.dev.js",
     "main": "npm run goGithub && npm run goNpm",
-    "goGithub":"git add . && git commit -m 'npm' && git push",
-    "goNpm":"npm run build && npm run orgin && npm publish",
+    "goGithub": "git add . && git commit -m 'npm' && git push",
+    "goNpm": "npm run build && npm run orgin && npm publish",
     "isDist": "if exist dist ( npm run del )",
     "del": "rmdir dist /s /q",
     "over": "npm run isDist && npm run main",
-    "orgin":"npm config delete registry && npm config delete disturl"
+    "orgin": "npm config delete registry && npm config delete disturl"
   },
   "author": "周靖松",
   "license": "ISC",
@@ -39,5 +39,8 @@
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "md5": "^2.2.1"
   }
 }
