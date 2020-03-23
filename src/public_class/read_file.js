@@ -6,7 +6,7 @@ export default async function readFile(model) {
     // 谷歌
     if (window.FileReader) {
         // 获取文件流
-        let file = model.currentTarget.files?model.currentTarget.files[0]:model;
+        let file = model.currentTarget?model.currentTarget.files[0]:model;
         // 创建FileReader实例
         let reader = new FileReader();
         // 读文件
