@@ -2,7 +2,7 @@
  * @Date: 2019-09-30 14:09:45
  * @information: 最后更新时间
  */
-export default async function readFile(model) {
+export default function readFile(model) {
     return new Promise((resolve, reject) => {
         // 谷歌
         if (window.FileReader) {
@@ -11,7 +11,7 @@ export default async function readFile(model) {
             // 创建FileReader实例
             let reader = new FileReader();
             // 读文件
-            await reader.readAsText(file);
+            reader.readAsText(file);
             reader.onload = () => {
                 resolve(reader.result)
             }
