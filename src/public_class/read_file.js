@@ -3,7 +3,7 @@
  * @information: 最后更新时间
  */
 export default function readFile(model) {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
         // 谷歌
         if (window.FileReader) {
             // 获取文件流
