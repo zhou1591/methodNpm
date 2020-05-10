@@ -10,6 +10,7 @@
 export default function readUrlQuery(queryName) {
     let query = window.location.search.substring(1).split("&");
     if(!query[0]){
+        if(!window.location.hash.substring(1).split("?")[1])return '';
         query = window.location.hash.substring(1).split("?")[1].split('&');
     }
     for (let i = 0; i < query.length; i++) {
