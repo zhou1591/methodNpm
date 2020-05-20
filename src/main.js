@@ -18,8 +18,6 @@ let mixinObj = {
     methods: initCalss
 }
 const install = (vue) => {
-    console.log(vue)
-    console.log(this)
     vue.mixin(mixinObj)
 }
 const zjsMethods = {
