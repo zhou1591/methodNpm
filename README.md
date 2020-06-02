@@ -61,6 +61,8 @@
 
 ### _popState ，//hash路由下边监听浏览器回退
 
+    只做了vue得
+
     import {_popState } from 'zjsmethods'
 
     引入之后在 想要监听得vue文件里边进行混入
@@ -86,4 +88,8 @@
     })
 
     // new 这个类之后 有一个vaildArrayBuffer 方法 他返回一个promise ,里边返回值是一个md5的字符串，这个是这个文件的唯一标识
+
+### _getPhone_v ，//获取当前设备型号
+
+    _getPhone_v() // 设备型号
 

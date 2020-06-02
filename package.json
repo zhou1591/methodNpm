@@ -1,6 +1,6 @@
 {
   "name": "zjsmethods",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "keywords": [
     "zjs",
     "周靖松",
@@ -21,6 +21,7 @@
     "isDist": "if exist dist ( npm run del )",
     "del": "rmdir dist /s /q",
     "over": "npm run isDist && npm run main",
+    "taobao": "npm config set registry https://registry.npm.taobao.org",
     "orgin": "npm config delete registry && npm config delete disturl"
   },
   "author": "周靖松",
@@ -42,6 +43,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "md5": "^2.2.1"
+    "md5": "^2.2.1",
+    "mobile-detect": "^1.4.4"
   }
 }
