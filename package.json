@@ -1,10 +1,8 @@
 {
-  "name": "zjsmethods",
-  "version": "1.5.6",
+  "name": "vue-common",
+  "version": "1.5.7",
   "keywords": [
-    "zjs",
-    "周靖松",
-    "zjsmethods"
+    "vue-common"
   ],
   "description": "常用方法包",
   "main": "dist/main.js",
@@ -24,7 +22,7 @@
     "taobao": "npm config set registry https://registry.npm.taobao.org",
     "orgin": "npm config delete registry && npm config delete disturl"
   },
-  "author": "周靖松",
+  "author": "vue-common",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.0",
