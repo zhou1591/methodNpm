@@ -42,7 +42,7 @@
     "webpack-dev-server": "^3.8.1"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "md5": "^2.2.1",
     "mobile-detect": "^1.4.4"
   }
